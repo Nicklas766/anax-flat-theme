@@ -17,28 +17,51 @@
 
  }
 
+// FOR FONT ALL TO   "a"
+
+@fontSizeH1: 2.375em;
+@colorH1BorderBottom: #666;
+@borderSizeH1: 1px;
+
+h1 {
+    .fontSize(@fontSizeH1);
+    font-weight: normal;
+
+    border-bottom: @borderSizeH1 solid @colorH1BorderBottom;
+    margin-bottom: @magicNumber - @borderSizeH1;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+     margin-bottom: @magicNumber;
+     color: darkorange;
+     font-family: @fontFamilyHeadings;
+ }
+
+ .font(@fontSize: 100.01%, @fontFamily: @fontFamilyBody) {
+    font: @fontSize/@lineHeight @fontFamily;
+}
+
+
+
+
+
+
+
  a {
      text-decoration: none;
      color: hotpink;
  }
 
- h1 {
-
-     color: darkorange;
-     box-shadow: 0 0 30px 5px rgba(0,0,0,1);
- }
-
- h4 {
-      color: darkorange;
- }
 
  p {
      color:limegreen;
+
+      margin-bottom: @magicNumber;
  }
 
 .wrap-all {
+    background: darkblue;
 
-    background-color: darkblue;
     box-shadow: 0 0 30px 5px rgba(0,0,0,1);
 }
 
@@ -54,9 +77,10 @@
 
 .site-header {
 
-    height: 80px;
+    height: 50px;
     background-color: darkblue;
-    border: 4px solid black;
+    border: 3px solid black;
+
 
 }
 
@@ -74,6 +98,12 @@
     float: left;
     width: 30%;
     color: limegreen;
+}
+
+.navbar2
+
+{
+    width:50%;
 }
 
 .site-logo-text {
@@ -129,13 +159,13 @@ img {
 /** --------------------------------------------------------------
  *  Responsive design
  */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 970px) {
     .site-logo-text {
         width: 40%;
     }
 
     .navbar2 {
-        width: 50%;
+        display: none;
     }
 
     .profile {
@@ -165,12 +195,9 @@ img {
     }
 }
 
-@media screen and (max-width: 603px) {
+@media screen and (max-width: 650px) {
 
 
-    .navbar2 {
-        display: none;
-    }
 
     .site-logo-text {
         width: 90%;
