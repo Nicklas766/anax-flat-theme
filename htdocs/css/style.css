@@ -19,6 +19,7 @@
  */
 /* Document
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1142,6 +1143,9 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   padding: 0 0.25em;
   background-color: #fff;
 }
+html {
+  background-color: darkgrey;
+}
 /** --------------------------------------------------------------
  *  Body
  */
@@ -1166,16 +1170,23 @@ h6 {
   color: darkorange;
   font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
 }
+h3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 a {
   text-decoration: none;
   color: hotpink;
 }
 p {
-  color: limegreen;
+  font-family: 'Baloo Bhaina', cursive;
   margin-bottom: 24px;
 }
+li {
+  font-family: 'Baloo Bhaina', cursive;
+}
 .wrap-all {
-  background: darkblue;
+  background-color: #d3d3d3;
   box-shadow: 0 0 30px 5px #000000;
 }
 /** --------------------------------------------------------------
@@ -1194,7 +1205,7 @@ p {
 .profile {
   float: left;
   width: 30%;
-  color: limegreen;
+  color: orange;
 }
 .navbar2 {
   width: 50%;
@@ -1204,7 +1215,7 @@ p {
 }
 .site-logo-text a {
   text-decoration: none;
-  color: black;
+  color: orange;
 }
 /** --------------------------------------------------------------
  *  Logo images
@@ -1219,6 +1230,16 @@ p {
 }
 img {
   max-width: 100%;
+}
+/** --------------------------------------------------------------
+ *  footer
+ */
+.footer {
+  border-style: solid;
+  background-color: darkblue;
+}
+.footer p {
+  color: white;
 }
 /** --------------------------------------------------------------
  *  Responsive design

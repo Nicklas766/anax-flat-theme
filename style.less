@@ -4,6 +4,12 @@
 @import url(modules.less);
 
 
+
+html {
+
+background-color: darkgrey;
+
+}
 /** --------------------------------------------------------------
  *  Body
  */
@@ -37,6 +43,8 @@ h1 {
      font-family: @fontFamilyHeadings;
  }
 
+
+
  .font(@fontSize: 100.01%, @fontFamily: @fontFamilyBody) {
     font: @fontSize/@lineHeight @fontFamily;
 }
@@ -52,15 +60,20 @@ h1 {
      color: hotpink;
  }
 
-
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
  p {
-     color:limegreen;
+     font-family: 'Baloo Bhaina', cursive;
+     color: black;
 
       margin-bottom: @magicNumber;
  }
 
+li {
+    font-family: 'Baloo Bhaina', cursive;
+}
+
 .wrap-all {
-    background: darkblue;
+    background-color: rgb(211,211,211);
 
     box-shadow: 0 0 30px 5px rgba(0,0,0,1);
 }
@@ -97,13 +110,13 @@ h1 {
 .profile {
     float: left;
     width: 30%;
-    color: limegreen;
+    color: orange;
 }
 
 .navbar2
 
 {
-    width:50%;
+    width:70%;
 }
 
 .site-logo-text {
@@ -111,7 +124,7 @@ h1 {
     font-size: 2em;
     a {
         text-decoration: none;
-        color: black;
+        color: orange;
     }
 }
 
@@ -156,6 +169,16 @@ img {
     max-width:100%;
 }
 
+
+/** --------------------------------------------------------------
+ *  footer
+ */
+
+.footer {
+    border-style: solid;
+    background-color: darkblue;
+
+}
 /** --------------------------------------------------------------
  *  Responsive design
  */

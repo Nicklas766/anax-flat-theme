@@ -1,0 +1,67 @@
+/**
+* Anax Flat theme.
+*/
+@import url(modules.less);
+@import url(style.less);
+
+
+// Here comes the customized theme
+
+
+
+@bgColor:   white;
+@bodyColor: white;
+@footerHeaderColor: white;
+@mainText: black;
+@headerText: grey;
+
+
+
+html {
+
+background-color: @bgColor;
+
+}
+
+.wrap-all {
+    background-color: @bodyColor;
+}
+
+p {
+    color: @mainText;
+}
+
+
+
+
+.site-header {
+    border: none;
+    background-color: @footerHeaderColor;
+
+}
+
+
+.site-logo-text {
+
+    a {
+        color: @headerText
+    }
+
+    }
+
+li {
+    color: @headerText;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+
+    color: @headerText;
+}
+
+@navbarItemBgColor: @bodyColor;
+
+.footer {
+    border: none;
+    background-color: @footerHeaderColor;
+}
