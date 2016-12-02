@@ -14,14 +14,12 @@ background-color: darkgrey;
  *  Body
  */
 
- .article {
-     img {
+ img {
 
-         float: right;
-         border: 2px solid;
-     }
-
+     max-width:100%;
  }
+
+
 
 // FOR FONT ALL TO   "a"
 
@@ -109,14 +107,14 @@ li {
 .navbar2,
 .profile {
     float: left;
-    width: 30%;
+    width: 24%;
     color: orange;
 }
 
 .navbar2
 
 {
-    width:70%;
+    width:76%;
 }
 
 .site-logo-text {
@@ -164,10 +162,7 @@ li {
     }
 }
 
-img {
 
-    max-width:100%;
-}
 
 
 /** --------------------------------------------------------------
@@ -178,6 +173,27 @@ img {
     border-style: solid;
     background-color: darkblue;
 
+}
+
+
+/** --------------------------------------------------------------
+ *  TABLE
+ */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: orange;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(44,21,39);
 }
 /** --------------------------------------------------------------
  *  Responsive design

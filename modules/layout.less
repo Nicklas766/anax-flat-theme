@@ -1,20 +1,54 @@
+// Grid variabler
+@gridWidth: 960px;
+@gridImage:
+"../img/grid/grid940x12x60x20-nomargin.png";
+//@gridImage:
+//"../img/grid/grid940x12x60x20-nomargin.png";
 
+// Demonstrera gridet på GRID sidan
 .route-grid .wrap-all {
-    .showGrid();
+    .container();
+    .showGrid(@gridWidth, @gridImage);
     background-color: white;
 
 }
 
+.route-grid .main {
+    background-color: orange;
+    opacity: 0.5;
 
+}
+
+.route-grid .sidebar {
+    background-color: green;
+    opacity: 0.5;
+
+}
+
+// Demonstrera gridet på typography sidan
 .route-typography .wrap-all {
+    .container();
+    .showGrid(@gridWidth, @gridImage);
+    background-color: white;
+
+}
+// Demonstrera typography på typography sidan
+.route-typography .main {
     .showGrid2();
     background-color: white;
 
+    p {
+
+        color:black;
+    }
+
+// byggdelen av sidan
 }
 
 .wrap-all {
     .container();
     max-width: 960px;
+
 }
 
 .site-header,
@@ -46,7 +80,6 @@
 .main {
     .column(8);
 
-
 }
 
 
@@ -58,11 +91,14 @@
         .clearfix();
         margin-top: @magicNumber;
         margin-bottom: @magicNumber;
+
     }
     .block.site-footer {
         .column(12);
         margin-top: @magicNumber;
         margin-bottom: @magicNumber;
+
+        text-align: center;
 
 
     }

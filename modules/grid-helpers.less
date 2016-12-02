@@ -2,8 +2,8 @@
  * Show grid.
  */
  // Grid for grid.md
-.showGrid(@maxWidth: 960px) {
-    background-image: url("../img/grid/grid960x12x60x20.png");
+.showGrid(@maxWidth: 960px, @gridImage) {
+    background-image: url("@{gridImage}");
     background-repeat: repeat-y;
     background-size: 100% auto;
     margin-left: auto;
@@ -16,5 +16,5 @@
 }
 // grid for typography.md
 .showGrid2(@maxWidth: 960px) {
-    background-image: url("../img/grid/horisontal-grid-22.png");
+    background-image: url("../img/grid/horisontal-grid-24.png");
 }
