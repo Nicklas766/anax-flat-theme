@@ -6,7 +6,7 @@
 //"../img/grid/grid940x12x60x20-nomargin.png";
 
 // Demonstrera gridet på GRID sidan
-.route-grid .wrap-all {
+.route-grid .inner-wrap {
     .container();
     .showGrid(@gridWidth, @gridImage);
     background-color: white;
@@ -26,7 +26,7 @@
 }
 
 // Demonstrera gridet på typography sidan
-.route-typography .wrap-all {
+.route-typography .inner-wrap {
     .container();
     .showGrid(@gridWidth, @gridImage);
     background-color: white;
@@ -46,6 +46,12 @@
 }
 
 .wrap-all {
+    .container();
+    max-width: 1630px;
+
+}
+
+.inner-wrap {
     .container();
     max-width: 960px;
 
@@ -67,8 +73,27 @@
     margin-bottom: @magicNumber;
 }
 
+.sidebar1 {
+    .column(2);
+    position: fixed;
+    background-color: rgb(44,21,39);
+    text-align: center;
+    opacity: 0.05;
+
+
+  transition: opacity 0.5s ease-in-out;
+
+}
+
+.sidebar1:hover {
+
+opacity: 1;
+
+
+
+    }
 .sidebar {
-    .column(4);
+    .column(2);
 }
 
 .row {
@@ -79,6 +104,8 @@
 
 .main {
     .column(8);
+    .push(1);
+
 
 }
 

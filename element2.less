@@ -1,0 +1,79 @@
+@import url(modules.less);
+@import url(style.less);
+@import url(light.less);
+
+
+@bodyColor: black;
+@footerHeaderColor: #909492;
+@mainText: limegreen;
+@gridWidth: 600px;
+
+
+html {
+     background-image: url("../img/dj.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center top 15px;
+
+
+}
+
+
+.inner-wrap {
+
+    border: limegreen dotted 3px;
+}
+
+.inner-wrap {
+    .container();
+    max-width: 600px;
+
+}
+
+.inner-wrap-header {
+    max-width: 960px;
+
+}
+
+.footer {
+     background-image: url("../img/footer.jpg");
+     background-size: contain;
+}
+
+.site-logo-text,
+.navbar2,
+.profile {
+    text-align:center;
+    width: 100%;
+    font-size: 0.5em;
+
+}
+
+.site-logo-text-icon img {
+    display: none;
+}
+
+.site-header {
+    height: 95px;
+    background-image: url("../img/djheader.jpg");
+    background-size: contain;
+
+    li {
+        box-shadow: 0 0 9px 4px limegreen;
+    }
+
+}
+
+.site-logo-text a {
+    background-color:black;
+    font-size: 6em;
+    color: limegreen;
+    opacity: 0.9;
+    box-shadow: 0 0 30px 5px limegreen;
+}
+
+
+.main {
+    .column(10);
+    .push(1);
+}

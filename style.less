@@ -70,10 +70,13 @@ li {
     font-family: 'Baloo Bhaina', cursive;
 }
 
-.wrap-all {
+
+.inner-wrap {
+
+
     background-color: rgb(211,211,211);
 
-    box-shadow: 0 0 30px 5px rgba(0,0,0,1);
+    border: black solid 1px;
 }
 
 
@@ -115,9 +118,78 @@ li {
 
 {
     width:76%;
+
+}
+
+// WOBBLE EFFECT FOR SITE LOGO TEXT
+
+@-webkit-keyframes wobble {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes wobble {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    -ms-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 .site-logo-text {
+
+    display: inline-block;
+     -webkit-transform: translateZ(0);
+     -ms-transform: translateZ(0);
+     transform: translateZ(0);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
     font-size: 2em;
     a {
@@ -126,13 +198,38 @@ li {
     }
 }
 
+.site-logo-text:hover {
+    -webkit-animation-name: wobble;
+      animation-name: wobble;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-timing-function: ease-in-out;
+      animation-timing-function: ease-in-out;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+
+}
+
+
 // Navbar main
 
 .rm-desktop li {
 
+    -webkit-transition:all .3s ease-out;
+      -moz-transition:all .3s ease-out;
+      -ms-transition:all .3s ease-out;
+      -o-transition:all .3s ease-out;
+      transition:all .3s ease-out;
+
     //background-color: lightgrey;
 }
-
+.rm-desktop li:hover {
+    -webkit-transform:translate(0px,10px);
+-moz-transform:translate(0px,10px);
+-ms-transform:translate(0px,10px);
+-o-transform:translate(0px,10px);
+transform:translate(0px,10px);
+    }
 @navbarItemBgColor: lightgrey;
 
 // Navbar max
